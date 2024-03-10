@@ -26,12 +26,8 @@ export default function Home() {
           }}
           onMouseLeave={() => setSize('small')}
         >
-          <a
-            href='https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            By <h2>DeGaming</h2>
+          <a href='/' target='_blank' rel='noopener noreferrer'>
+            By <h2 className={styles.sub}>DeGaming</h2>
           </a>
         </div>
       </div>
@@ -44,14 +40,17 @@ export default function Home() {
         }}
         onMouseLeave={() => setSize('small')}
       >
-        <Image
-          className={styles.logo}
-          src='/LogoWhite.png'
-          alt='Degaming Logo'
-          width={180}
-          height={37}
-          priority
-        />
+        <div className={styles.headline}>
+          <Image
+            className={styles.logo}
+            src='/degaming.svg'
+            alt='Degaming Logo'
+            width={64}
+            height={64}
+            priority
+          />
+          <h1 className={styles.title}>DeGaming</h1>
+        </div>
         <p>
           {' '}
           DeGaming is positioned at the vanguard of blockchain-integrated

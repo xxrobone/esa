@@ -103,6 +103,7 @@
   top: 0;
   left: 0;
   overflow: hidden;
+  z-index: -1;
 
   .line {
     position: absolute;
@@ -130,9 +131,10 @@
       content: '';
       display: block;
       position: absolute;
-      height: 100%;
+      height: 300px;
       width: 1px;
       top: 0;
+      bottom: 0;
       left: 0;
       background: linear-gradient(
         to bottom,
@@ -140,6 +142,7 @@
         #f239f2 75%,
         #46e7d4 100%
       );
+      animation-delay: 0.4s;
       animation: run 4s 0s infinite linear;
       animation-fill-mode: forwards;
 
@@ -160,6 +163,6 @@
     transform: translateY(-100%);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(200%);
   }
 }

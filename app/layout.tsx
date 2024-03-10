@@ -1,10 +1,21 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.scss';
 import CustomCursor from '@/components/Cursor';
 import CursorProvider from '@/components/Cursor/CursorProvider';
 
-const inter = Inter({ subsets: ['latin'] });
+import { Inter, Space_Grotesk } from 'next/font/google';
+
+const inter = Inter({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const space_grotesk = Space_Grotesk({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${space_grotesk.className}`}>
         <CursorProvider>
           <CustomCursor />
           {children}
