@@ -67,6 +67,13 @@ export default function Home() {
           className={styles.card}
           target='_blank'
           rel='noopener noreferrer'
+
+          onMouseEnter={() => {
+            setSize('mask');
+            console.log('mask')
+          }}
+          onMouseLeave={() => setSize('small')}
+
         >
           <h2>
             Docs <span>-&gt;</span>

@@ -23,6 +23,17 @@
     mix-blend-mode: difference;
     transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
 
+    &.mask {
+        width: 220px;
+        height: 220px;
+            mask-image: url('/mask.svg');
+            mask-repeat: no-repeat;
+            mask-size: 220px;
+            background: #ec4e39;
+            position: absolute;
+            color: black;
+    }
+
     &.xlarge {
         width: 220px;
         height: 220px;
