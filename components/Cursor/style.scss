@@ -29,16 +29,89 @@
             mask-image: url('/mask.svg');
             mask-repeat: no-repeat;
             mask-size: 220px;
-            background: #ec4e39;
+            background: var(--primary);
             position: absolute;
             color: black;
     }
+    &.degaming {
+        width: 220px;
+        height: 220px;
+        border-radius: 10px;
+            mask-image: url('/degaming.svg');
+            mask-repeat: no-repeat;
+            mask-size: 220px;
+            background: var(--primary);
+            position: absolute;
+            color: black;
+    }
+
+    &.mask2 {
+        width: 220px;
+        height: 220px;
+        -webkit-mask-image: url('/mask2.svg');
+        mask-image: url('/mask2.svg');
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        mask-size: 220px;
+        background: var(--primary);
+      }
+
+    &.mask3 {
+        width: 220px;
+        height: 220px;
+        -webkit-mask-image: url('/mask3.svg');
+        mask-image: url('/mask3.svg');
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        mask-size: 220px;
+        background: #000000;
+      }
+
+    &.mask4 {
+        width: 220px;
+        height: 220px;
+        -webkit-mask-image: url('/mask4.svg');
+        mask-image: url('/mask4.svg');
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        mask-size: 220px;
+        background: #000000;
+      }
+
+      &.crypto {
+        width: 120px;
+        height: 120px;
+        background-image: url('/xdc.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+       
+      }
+
+      &.crypto2 {
+        width: 120px;
+        height: 120px;
+        background-image: url('/mUSDT.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        object-fit: cover;
+        
+      }
 
     &.xlarge {
         width: 220px;
         height: 220px;
         border-radius: 15px;
-        border: 1px solid white;
+        border: 2px solid white;
+        background: transparent;
+      }
+
+    &.bordered {
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        border: 2px solid var(--primary);
         background: transparent;
       }
   
