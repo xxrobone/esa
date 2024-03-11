@@ -1,0 +1,59 @@
+/* CustomButton.module.css */
+.button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .small {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .medium {
+    font-size: 16px;
+  }
+  
+  .large {
+    font-size: 18px;
+  }
+  
+  .rounded5px {
+    border-radius: 5px;
+  }
+  
+  .rounded10px {
+    border-radius: 10px;
+  }
+  
+  .roundedFull {
+    border-radius: 100%;
+  }
+  
+  .filled {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid transparent;
+  }
+  
+  .outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    background-color: lighten(#ffffff, 10%);
+  }
+  
+  /* Active and Focus states */
+  .button:focus,
+  .button:active {
+    background-color: lighten(#ffffff, 15%);
+  }
+  
