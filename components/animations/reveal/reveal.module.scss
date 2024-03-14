@@ -1,0 +1,15 @@
+@use '../../../styles/base/' as *;
+
+.reveal {
+    position: relative;
+    overflow: hidden;
+
+    .effect {
+        position: absolute;
+        top: 8px;
+        bottom: 8px;
+        left: 0;
+        right: 0; 
+        background: $color-client-4;
+    }
+}

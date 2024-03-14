@@ -4,22 +4,43 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import { CursorContext } from '@/components/Cursor/CursorProvider';
 import GridLines from '@/components/Gridlines';
+import BgEllipse from '@/components/bgellipse/BgEllipse';
+import Button from '@/components/Button';
+import CodeInMotion from '@/components/CodeInMotion';
 
 export default function Home() {
+  const [showMoney, setShowMoney] = useState(false);
   const { setSize } = useContext(CursorContext);
+
+  const handleClick = () => {
+    setShowMoney(true);
+    setTimeout(() => {
+      setShowMoney(false);
+    }, 3000);
+  };
   return (
     <main className={styles.main}>
       <GridLines />
       <div className={styles.description}>
-        <p
+     {/*  <Image
+            className={styles.logo}
+            src='/walkingcode.gif'
+            alt='Degaming Logo'
+            width={120}
+            height={120}
+          priority
+          
           onMouseEnter={() => {
             setSize('large');
             console.log('regular');
           }}
           onMouseLeave={() => setSize('small')}
+          /> */}
+      {/*   <p
+         
         >
           Pioneering Web3 Casino Gaming
-        </p>
+        </p> */}
         <div
           onMouseEnter={() => {
             setSize('bordered');
@@ -27,10 +48,25 @@ export default function Home() {
           onMouseLeave={() => setSize('small')}
         >
           <a href='/' target='_blank' rel='noopener noreferrer'>
-            By <h2 className={styles.sub}>DeGaming</h2>
+            By <h2 className={styles.sub}>Rupert von Kodar</h2>
           </a>
         </div>
       </div>
+      <div className={styles.buttons}>
+        <Button theme='outline' background='' color='' onClick={handleClick}>
+          Play Now
+        </Button>
+        <Button background=''>Documentation</Button>
+      </div>
+      {showMoney && (
+        <Image
+          src='/money.gif'
+          alt='money'
+          width={100}
+          height={200}
+          style={{ position: 'absolute', left: '10vw', top: '50vh' }}
+        />
+      )}
 
       <div
         className={styles.center}
@@ -43,13 +79,13 @@ export default function Home() {
         <div className={styles.headline}>
           <Image
             className={styles.logo}
-            src='/degaming.svg'
+            src='/social_1.png'
             alt='Degaming Logo'
-            width={64}
-            height={64}
+            width={120}
+            height={120}
             priority
           />
-          <h1 className={styles.title}>DeGaming</h1>
+          <h1 className={styles.title}>Code in Motion</h1>
         </div>
         <p>
           {' '}
@@ -137,6 +173,13 @@ export default function Home() {
         </a>
       </div>
       <div className='bg'></div>
+      <BgEllipse />
+      <section>
+        
+        </section>
+      <section>
+
+        </section>
     </main>
   );
 }

@@ -1,0 +1,76 @@
+.live-bets {
+    .table-container {
+      overflow-x: auto;
+  
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+  
+        thead {
+          tr {
+            th {
+              padding: 12px;
+              font-weight: bold;
+              text-align: left;
+              background-color: #232f48;
+              color: #fff;
+            }
+          }
+        }
+  
+        tbody {
+          tr {
+            border-bottom: 1px solid #888;
+  
+            &:hover {
+              background-color: transparent;
+              border-color: #fafaf8;
+            }
+  
+            &.open {
+              background-color: #9815f3;
+  
+              &:hover {
+                background-color: transparent;
+              }
+            }
+          }
+  
+          td {
+            padding: 12px;
+            text-align: left;
+            max-height: 56px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+  
+            &.right {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .table-head-cell {
+    &.left {
+      text-align: left;
+    }
+  
+    &.right {
+      text-align: right;
+    }
+  }
+  
+  .table-row-cell {
+    &.left {
+      text-align: left;
+    }
+  
+    &.right {
+      text-align: right;
+    }
+  }
+  

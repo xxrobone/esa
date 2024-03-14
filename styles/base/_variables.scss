@@ -1,0 +1,3 @@
+$body-width: calc(100vw - 10px);
+$vw: calc($body-width / 100);
+$body-space: calc($vw * 4);

@@ -1,0 +1,79 @@
+@use '@/styles/base/' as *;
+
+.nav_item {
+  max-width: 300px;
+  position: relative;
+  padding: 1rem 1.25rem;
+  text-transform: capitalize;
+  display: grid;
+  place-content: center;
+
+  @media screen and (min-width: 960px) {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+
+  &:first-of-type {
+    margin-top: 4rem;
+
+    @media screen and (min-width: 960px) {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &:last-of-type {
+    @media screen and (min-width: 960px) {
+      margin-right: 10vw;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      margin-right: 5vw;
+    }
+  }
+
+  .nav_link {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: $font-secondary;
+    color: $color-client-white;
+    font-size: $font-size-m;
+    text-shadow: $text-shadow-primary;
+
+    @media screen and (min-width: 960px) {
+      padding: 1rem 0.5rem;
+      font-size: $font-size-l;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0%;
+      height: 2px;
+      background-color: $color-client-2;
+      transition: width 0.25s ease-out;
+
+      @media screen and (min-width: 960px) {
+        bottom: 20%;
+      }
+    }
+  }
+
+  &:hover {
+    .nav_link {
+      &::before {
+        width: 100%;
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}

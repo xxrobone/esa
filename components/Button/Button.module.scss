@@ -5,8 +5,9 @@
     outline: none;
     cursor: pointer;
     font-size: 16px;
-    padding: 12px 20px;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    padding: 10px 16px;
+    transition: all 0.3s ease-in-out;
   }
   
   .small {
@@ -20,6 +21,7 @@
   
   .large {
     font-size: 18px;
+    padding: 12px 20px;
   }
   
   .rounded5px {
@@ -35,25 +37,46 @@
   }
   
   .filled {
-    background-color: #ffffff;
+    background-color: var(--primary);
     color: #000000;
     border: 1px solid transparent;
+
+    &:hover {
+     /*  background-color: lighten(#ffffff, 10%); */
+      filter: invert(1);
+    }
+
+    &:focus,
+  &:active {
+    background-color: lighten(#ffffff, 15%);
+  }
   }
   
   .outline {
     background-color: transparent;
     color: #ffffff;
-    border: 1px solid #ffffff;
-  }
-  
-  /* Hover effect */
-  .button:hover {
-    background-color: lighten(#ffffff, 10%);
+    border: 1px solid var(--primary);
+
+     /* Hover effect */
+  &:hover {
+    background-color: var(--primary);
   }
   
   /* Active and Focus states */
-  .button:focus,
+  &:focus,
+  &:active {
+    background-color: var(--primary);
+  }
+  }
+  
+  /* Hover effect */
+ /*  .button:hover {
+    background-color: lighten(var(--primary), 10%);
+  } */
+  
+  /* Active and Focus states */
+ /*  .button:focus,
   .button:active {
     background-color: lighten(#ffffff, 15%);
-  }
+  } */
   

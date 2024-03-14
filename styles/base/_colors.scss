@@ -1,0 +1,53 @@
+
+// colors
+
+$color-bg-dark: #121212;
+$color-bg-light: #efefef;
+$color-bg-light-alt: #fff;
+$color-text-primary: #f8f8f8;
+$color-text-secondary: #121212;
+$color-alt-1: #3DBDA7;
+$color-alt-2: #4AA788;
+
+// colors client
+/* $color-client-1: #fff4e9;
+$color-client-2: #1a1b1b;
+$color-client-3: #3DBDA7;
+$color-client-4: #4AA788;
+$color-client-5: #e2725b;
+$color-client-black: #080808;
+$color-shadow: #31413E;
+$color-bg: #1D1E22;
+ */
+
+ $color-client-1: #ebebeb;
+$color-client-2: #bcbcbc;
+$color-client-3: #9ea1a2;
+$color-client-4: #555555;
+$color-client-5: #25282a;
+$color-client-white: #fafafa;
+$color-client-black: #080808;
+$color-client-alt: #1b1d1d4d;
+$color-shadow: #141414c9;
+$color-bg:  #232428;
+$color-bg-alt: #141414;
+$color-client-menu: #0f0f0f;
+$color-client-menu-alt: #0c0c0c;
+$color-bg: #1b1b1b;
+
+// color scrollbar
+$color-scrollbar-bg: $color-shadow;
+
+// color gradients
+$color-gradient-green: linear-gradient(120deg, #15332b7c, #10352c77, #173d3d46, #09332d63, #13161623);
+
+$color-gradient-alt: linear-gradient(120deg, #3435347c, #3a3b3b77, #55575746, #30313163, #33333323);
+
+$color-gradient-purple: linear-gradient(120deg, #574650, #E6D5DF, #6F5E68);
+
+$color-gradient-black: linear-gradient(120deg, #121212, #000, #040404, #181818);
+
+$color-gradient-white: linear-gradient(120deg, $color-client-1, #fff, $color-client-1, #f8f8fa, #dedede);
+
+
+

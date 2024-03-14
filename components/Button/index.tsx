@@ -1,6 +1,7 @@
 
-import React, { FC, MouseEvent, KeyboardEvent, FocusEvent } from 'react';
+import React, { FC, MouseEvent, KeyboardEvent, FocusEvent, useContext } from 'react';
 import styles from './Button.module.scss';
+import { CursorContext } from '@/components/Cursor/CursorProvider';
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -36,6 +37,8 @@ const Button: FC<ButtonProps> = ({
     (event.target as HTMLButtonElement).style.backgroundColor = background;
   };
 
+  const { setSize } = useContext(CursorContext);
+
   return (
     <button
       className={`${styles.button} ${styles[size]} ${styles[theme]}`}
@@ -49,6 +52,11 @@ const Button: FC<ButtonProps> = ({
       onFocus={handleFocus}
       onBlur={handleBlur}
       tabIndex={0}
+
+     /*  onMouseEnter={() => {
+        setSize('regular');
+      }}
+      onMouseLeave={() => setSize('small')} */
     >
       {children}
     </button>

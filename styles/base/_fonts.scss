@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Darker+Grotesque:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+  @font-face {
+    font-family: Basement;
+    src: url('/src/assets/fonts/BasementGrotesque-Black.otf');
+  }
+
+  @font-face {
+    font-family: Aileron;
+    src: url('/src/assets/fonts/Aileron-regular.otf');
+  }
+
+  @font-face {
+    font-family: Anek;
+    src: url('/src/assets/fonts/AnekBangla.ttf');
+  }
+
+  @font-face {
+    font-family: CaviarDreamsBold;
+    src: url("/src/assets/fonts/Caviar_Dreams_Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: SourceProLight;
+    src: url("/src/assets/fonts/SourceSansPro-Light.otf");
+  }
+  
+  @font-face {
+    font-family: SourcePro;
+    src: url("/src/assets/fonts/SourceSansPro-Regular.otf");
+  }
+
+  /* 
+  font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+  */
+
+/* $font-base: Aileron;
+$font-headline: Anek, sans-serif; */
+  
+$font-primary: SourcePro;
+$font-secondary: SourceProLight;
+$font-headline: CaviarDreamsBold;
+$font-handwritten: 'Ephesis', cursive;
+
+// font-sizes
+$font-size-s: clamp(0.6875rem, 0.6094rem + 0.25vw, 0.75rem); // h6
+$font-size-base: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
+$font-size-m: clamp(1.125rem, 0.9063rem + 0.625vw, 1.375rem); // h5
+$font-size-ml: clamp(1.25rem, 0.9688rem + 0.75vw, 1.5rem); // h4
+$font-size-l: clamp(1.375rem, 0.9063rem + 1.5vw, 1.75rem); // h3
+$font-size-xl: clamp(2.225rem, 0.8438rem + 3vw, 3.25rem); // h2
+$font-size-xxl: clamp(3rem, 0.75rem + 7vw, 6rem); // h1
+$font-size-xxxl: clamp(6rem, 0.9063rem + 10vw, 10.25rem); // main title
+
+// font weight
+$font-normal: 400;
+$font-medium: 600;
+$font-bold: 800;
+
+
