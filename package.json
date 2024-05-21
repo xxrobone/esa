@@ -14,7 +14,11 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "sass": "^1.71.1"
+    "sass": "^1.71.1",
+    "swiper": "^11.0.7",
+    "@studio-freight/lenis": "^1.0.42",
+    "popmotion": "^11.0.5",
+    "hover-effect": "^1.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",

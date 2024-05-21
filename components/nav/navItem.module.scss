@@ -1,69 +1,45 @@
 @use '@/styles/base/' as *;
 
 .nav_item {
-  max-width: 300px;
+  width: 25%;
+  height: 90%;
+  top: 0;
+  margin: 0 0 auto;
+  bottom: auto;
+  border: 1px solid #f3f3f33e;
+  border-radius: 30px;
   position: relative;
-  padding: 1rem 1.25rem;
   text-transform: capitalize;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: var(--font-inter);
+  background-color: black;
+  padding: 1rem 0;
 
   @media screen and (min-width: 960px) {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    padding: 1rem 0.5rem;
-  }
-
-  &:first-of-type {
-    margin-top: 4rem;
-
-    @media screen and (min-width: 960px) {
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
-  }
-
-  &:last-of-type {
-    @media screen and (min-width: 960px) {
-      margin-right: 10vw;
-    }
-    
-    @media screen and (min-width: 1200px) {
-      margin-right: 5vw;
-    }
+   
+    padding: 1rem 0;
   }
 
   .nav_link {
+    height: 100px;
+    width: 100%;
     margin: 0;
+    padding-left: 0.5rem;
     display: inline-block;
     position: relative;
     text-decoration: none;
     text-transform: capitalize;
-    font-family: $font-secondary;
     color: $color-client-white;
     font-size: $font-size-m;
     text-shadow: $text-shadow-primary;
+    border-bottom: 1px solid #f3f3f33e;
 
     @media screen and (min-width: 960px) {
       padding: 1rem 0.5rem;
       font-size: $font-size-l;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 0%;
-      height: 2px;
-      background-color: $color-client-2;
-      transition: width 0.25s ease-out;
-
-      @media screen and (min-width: 960px) {
-        bottom: 20%;
-      }
     }
   }
 

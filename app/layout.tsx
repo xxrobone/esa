@@ -39,8 +39,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} ${space_grotesk.className}`}>
-        <MenuBtn active={active} setActive={setActive} />
         <CursorProvider>
+          <CustomCursor />
+          <MenuBtn active={active} setActive={setActive} />
           <AnimatePresence mode='wait'>
             {active && (
               <Nav active={active}>
@@ -58,7 +59,6 @@ export default function RootLayout({
               </Nav>
             )}
           </AnimatePresence>
-          <CustomCursor />
           <Socials />
           {children}
         </CursorProvider>

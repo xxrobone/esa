@@ -3,8 +3,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+}
+
+.section1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(to bottom, #1b302f, #16181d);
+  z-index: -1;
+  /*  background: linear-gradient(#a4d7f6, #5191bf); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .title {
@@ -268,11 +281,13 @@
   }
 }
 
-
 /* Section ================ */
 
 .section {
   height: 100vh;
   width: 100%;
-  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }

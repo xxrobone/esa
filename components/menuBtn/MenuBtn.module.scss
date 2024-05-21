@@ -1,7 +1,8 @@
 @use '@/styles/base/' as *;
 /* ========== HAMBURGER NAV BUTTON ====================== */
 .hamburger_wrapper {
-    position: absolute;
+    position: fixed;
+    display: block;
     left: 50%;
     transform: translateX(-50%);
     bottom: 1rem;
@@ -10,14 +11,14 @@
     padding: 8px;
     -webkit-filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
             filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
-            width: 60%;
+            width: 40%;
             background-color: transparent;
             border: 1px solid #f3f3f33e;
+            pointer-events: auto;
   }
 
   .container {
     border-radius: 100px;
-    padding: 0 12px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -27,7 +28,9 @@
     justify-content: space-between;
     gap: 8px;
 
-    > button {
+
+     button {
+        position: relative;
         margin: 0 4px;
         outline: none;
         border: none;
@@ -39,32 +42,8 @@
         width: 40px;
         height: 40px;
         background: transparent;
-
-        &:nth-of-type(1) {
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
-            width: 50px;
-            padding-left: 2px;
-        }
-
-        &:nth-of-type(2) {
-            width: 50px;
-            padding: 0 4px;
-        }
-
-        &:nth-of-type(3) {
-           
-            width: 50px;
-           padding: 0 4px;
-        }
-
-        &:nth-of-type(4) {
-            border-top-right-radius: 100px;
-            border-bottom-right-radius: 100px;
-            align-self: flex-end;
-            width: 50px;
-            padding-right: 4px;
-        }
+        pointer-events: auto;
+        cursor: pointer;
 
         >svg {
             height: 80%;
@@ -73,14 +52,79 @@
         }
     }
 
+    .text {
+        border: 1px solid #f8f8f831;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        height: 40px;
+        padding: 0 4px;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+
     .home {
-        width: 40%;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        pointer-events: auto;
+        background-color: rgba(var(--primary), 0.7);
+        border-radius: var(--border-radius);
+
+        &.active {
+            width: 100%;
+    }
+
+        .homeBtn {
+            width: 50px;
+            padding: 0 4px;
+        }
+    }
+
+    .logoBtn {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        width: 50px;
+        padding: 0 2px 0 4px;
+        pointer-events: auto;
+    }
+
+
+    .listBtn {
+        width: 50px;
+       padding: 0 4px;
+       pointer-events: auto;
     }
 
     .menu {
-        width: 40%;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        pointer-events: auto;
+
+        &.active {
+                width: 100%;
+        }
+
+        .menuBtn {
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            align-self: flex-end;
+            width: 50px;
+            padding-right: 4px;
+        }
     }
   }
+
+  .notActive {
+    width: 0;
+  }
+
 
   
   
@@ -144,7 +188,7 @@
 .hamburger.active span:nth-child(1),
 .hamburger.active span:nth-child(3) {
     width: 0;
-    background-color: $color-client-5;
+    background-color: $color-client-2;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -153,7 +197,7 @@
             transform: rotate(-45deg);
     transition-delay: 0.6s;
 
-    background-color: $color-client-5;
+    background-color: $color-client-2;
 }
 
 .hamburger.active span:nth-child(2):after {
@@ -162,7 +206,7 @@
             transform: rotate(90deg);
     transition-delay: 0.6s;
 
-    background-color: $color-client-5;
+    background-color: $color-client-2;
 }
       
  
@@ -171,3 +215,13 @@
      /*  display: none; */
   }
 }
+
+.hide {
+    z-index: 40;
+    position: fixed;
+   bottom: -200px;
+    transition: all 0.4s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

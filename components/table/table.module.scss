@@ -1,58 +1,67 @@
 .live-bets {
-    .table-container {
-      overflow-x: auto;
-  
-      .table {
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-  
-        thead {
-          tr {
-            th {
-              padding: 12px;
-              font-weight: bold;
-              text-align: left;
-              background-color: #232f48;
-              color: #fff;
+  position: relative;
+  margin: 5rem auto;
+  width: 60%;
+  height: 100%;
+
+  .table-container {
+    overflow-x: auto;
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+
+      thead {
+        tr {
+          th {
+            padding: 12px;
+            font-weight: bold;
+            text-align: left;
+            background-color: #232f4800;
+            color: #fff;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          margin-bottom: 1rem; 
+          height: 40px;
+          border: 1px solid transparent;
+          border-radius: 20px;
+
+          &:hover {
+            background-color: transparent;
+            background-color: #9615f353;
+            border-radius: 20px;
+          }
+
+          &.open {
+            background-color: #9815f3;
+
+            &:hover {
+              background-color: transparent;
             }
           }
         }
-  
-        tbody {
-          tr {
-            border-bottom: 1px solid #888;
-  
-            &:hover {
-              background-color: transparent;
-              border-color: #fafaf8;
-            }
-  
-            &.open {
-              background-color: #9815f3;
-  
-              &:hover {
-                background-color: transparent;
-              }
-            }
-          }
-  
-          td {
-            padding: 12px;
-            text-align: left;
-            max-height: 56px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-  
-            &.right {
-              text-align: right;
-            }
+
+        td {
+          padding: 12px;
+          text-align: left;
+          height: 50px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+          &.right {
+            text-align: right;
           }
         }
       }
     }
   }
+}
 
   .table-head-cell {
     &.left {
@@ -65,6 +74,8 @@
   }
   
   .table-row-cell {
+    padding: 12px;
+    cursor: none;
     &.left {
       text-align: left;
     }

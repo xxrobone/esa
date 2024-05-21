@@ -20,8 +20,9 @@ const Nav: React.FC<NavProps> = ({ active, children }) => {
       animate='enter'
       exit='exit'
     >
+      {' '}
       <Link className={styles.link} href='/'>
-       web 1
+        DeGaming
       </Link>
       <ul className={`${styles.menu} ${active ? styles.open : ''}`}>
         {children}

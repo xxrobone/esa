@@ -30,9 +30,19 @@
             mask-repeat: no-repeat;
             mask-size: 220px;
             background: var(--primary);
-            position: absolute;
             color: black;
     }
+
+    &.mask-burn {
+        width: 120px;
+        height: 120px;
+            mask-image: url('/mask.svg');
+            mask-repeat: no-repeat;
+            mask-size: 120px;
+            background: #f8f8f8;
+            mix-blend-mode: darken;
+    }
+
     &.degaming {
         width: 220px;
         height: 220px;
@@ -41,7 +51,6 @@
             mask-repeat: no-repeat;
             mask-size: 220px;
             background: var(--primary);
-            position: absolute;
             color: black;
     }
 
@@ -114,18 +123,41 @@
         border: 2px solid var(--primary);
         background: transparent;
       }
+
+    &.bordered-table {
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        border: 1px solid #f3f3f33e;
+        background: var(--primary-glow);
+      }
   
+    &.mask-large {
+      width: 120px;
+      height: 120px;
+      mask-image: url('/mask.svg');
+      mask-repeat: no-repeat;
+      mask-size: 120px;
+      background: var(--primary);
+      color: black;
+    }
+
     &.large {
       width: 120px;
       height: 120px;
-     /*  border-radius: 15px;
-      border: 1px solid white;
-      background: transparent; */
     }
+
     &.regular {
       width: 40px;
       height: 40px;
     }
+
+    &.regular-purple {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+    }
+
     &.small {
       width: 20px;
       height: 20px;
