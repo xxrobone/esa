@@ -19,6 +19,7 @@
     "@studio-freight/lenis": "^1.0.42",
     "popmotion": "^11.0.5",
     "hover-effect": "^1.2.1"
+    
   },
   "devDependencies": {
     "@types/node": "^20",

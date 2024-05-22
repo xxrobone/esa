@@ -28,11 +28,11 @@ export default function Home() {
   };
   return (
     <main className={styles.main}>
-      {/* { <section className={styles.section1}>
+      { <section className={styles.section1}>
         <TheDrop />
         <AnimatedCraze />
         <WaterDrop />
-      </section>} */}
+      </section>}
       <GridLines />
       <section className={styles.section}>
         <div className={styles.description}>
@@ -116,7 +116,7 @@ export default function Home() {
             target='_blank'
             rel='noopener noreferrer'
             onMouseEnter={() => {
-              setSize('mask');
+              setSize('degaming');
             }}
             onMouseLeave={() => setSize('small')}
           >
@@ -136,7 +136,7 @@ export default function Home() {
             target='_blank'
             rel='noopener noreferrer'
             onMouseEnter={() => {
-              setSize('degaming');
+              setSize('mask');
             }}
             onMouseLeave={() => setSize('small')}
           >
@@ -168,12 +168,12 @@ export default function Home() {
           </a>
 
           <a
-            href='https://www.wagmicasino.io/'
+            href='https://play.casin0x.io/'
             className={styles.card}
             target='_blank'
             rel='noopener noreferrer'
             onMouseEnter={() => {
-              setSize('crypto2');
+              setSize('casinox');
               console.log('mask4');
             }}
             onMouseLeave={() => setSize('small')}
@@ -186,7 +186,7 @@ export default function Home() {
               market! with our customizable SDK
               <br />
               <br />
-              Here you can see WagmiCasino as an live example
+              Here you can see Casin0x as an live example
             </p>
           </a>
         </div>
@@ -194,10 +194,10 @@ export default function Home() {
       <div className='bg'></div>
       <BgEllipse />
       <section className={styles.section}>
-        <TableComponent gameplayLogs={mockData} />
+        
       </section>
       <section className={styles.section}>
-        <StackedCards />
+       
       </section>
     </main>
   );
