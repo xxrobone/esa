@@ -42,7 +42,7 @@ const Hero = ({ image, title, desc, tag }: SectionProps) => {
                   el='h1'
                   className='title2'
               />
-              <p className='font-primary max-w-[700px] text-2xl'>{desc}</p>
+              <p className='font-primary max-w-[700px] text-xl md:text-2xl'>{desc}</p>
               <Button theme='outlined'>Om Oss</Button>
       </div>
     </section>
