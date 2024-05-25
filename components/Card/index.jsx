@@ -40,7 +40,7 @@ const Card = ({
     }
 
     setRandomAngle(angle);
-  }, []);
+  }, [i]);
 
   return (
     <div ref={container} className={styles.cardContainer}>

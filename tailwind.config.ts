@@ -15,5 +15,11 @@ const config: Config = {
     },
   },
   plugins: [],
+    rules: {
+        eqeqeq: "off",
+        "no-unused-vars": "error",
+        "prefer-const": ["error", { "ignoreReadBeforeAssign": true }]
+    }
+
 };
 export default config;
