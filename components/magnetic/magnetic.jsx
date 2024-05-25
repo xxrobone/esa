@@ -24,7 +24,7 @@ const Magnetic = ({ children }) => {
   const { x, y } = mousePos;
 
   return (
-    <motion.div
+    <motion.span
       onMouseMove={mouseMove}
       onMouseLeave={mouseLeave}
       ref={ref}
@@ -32,7 +32,7 @@ const Magnetic = ({ children }) => {
       transition={{ type: 'spring', stiffness: 100 }}
     >
       {children}
-    </motion.div>
+    </motion.span>
   );
 };
 

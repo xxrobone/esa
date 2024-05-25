@@ -11,6 +11,7 @@ import Nav from '@/components/nav/Nav';
 import NavItem from '@/components/nav/NavItem';
 import { navData } from '@/assets/constants/NavData';
 
+
 import { Inter, Space_Grotesk } from 'next/font/google';
 
 const inter = Inter({
@@ -59,9 +60,11 @@ export default function RootLayout({
               </Nav>
             )}
           </AnimatePresence>
+         
           <Socials />
           {children}
         </CursorProvider>
+      
       </body>
     </html>
   );

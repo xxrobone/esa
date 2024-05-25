@@ -1,28 +1,28 @@
 export const navData = [
   {
-    title: 'Gaming Liquidity',
-    path: '/',
+    title: 'E-Sport',
+    path: '/#',
     id: 1,
 
     i: 0,
   },
   {
-    title: 'Bankrolls',
-    path: '/bankrolls',
+    title: 'Turneringar',
+    path: '/#',
     id: 2,
 
     i: 1,
   },
   {
-    title: 'Livebets',
-    path: '/livebets',
+    title: 'Aktiviteter',
+    path: '/#',
     id: 3,
 
     i: 2,
   },
   {
-    title: 'Games',
-    path: '/games',
+    title: 'E-sport läger',
+    path: '/#',
     id: 4,
 
     i: 3,

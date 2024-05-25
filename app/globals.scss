@@ -1,13 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-white;
+    @apply bg-black;
+  }
+}
+
+
+
 :root {
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-
-/*   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
+    --callout-rgb: rgba(20, 20, 20);
+    --callout-border-rgb: rgba(108, 108, 108);
+  
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: #000;
   --background-end-rgb: #020613;
@@ -127,4 +139,91 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+.componentNav {
+  position: absolute;
+  top: 2vh;
+  left: auto;
+  right: 2vw;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+      position: fixed;
+      background-color: black;
+      border-radius: 10px;
+  }
+
+  li {
+      position: relative;
+      margin: 0;
+      padding: 1rem;
+      background-color:  rgba(var(--callout-rgb), 0.5);
+      border: 1px solid rgba(var(--card-border-rgb), 0.3);
+      border-radius: 12px;
+      min-width: 300px;
+    }
+
+  a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+      .desc {
+          font-weight: 700;
+          font-family: monospace;
+        }
+        
+        .desc:hover {
+          background-color: rgba(var(--callout-rgb), 0.1) !important;
+          border: 1px solid rgba(var(--card-border-rgb), 0.25);
+        }
+}
+
+.title {
+  width: 100%;
+  font-family: var(--font-space_grotesk);
+  font-size: clamp(3rem, 0.75rem + 7vw, 6rem);
+}
+
+.title2 {
+  width: 100%;
+  font-family: var(--font-space_grotesk);
+  font-size: clamp(3rem, 0.75rem + 6vw, 5rem);
+}
+
+.headerRow .title span {
+  width: 100%;
+  font-family: var(--font-space_grotesk);
+  font-size: clamp(2rem, 0.75rem + 3vw, 3rem);
+}
+
+td {
+  padding: 0 0.25rem;
+}
+
+td.title {
+  width: 100%;
+  font-family: var(--font-space_grotesk);
+  font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
+}
+
+span {
+  white-space: nowrap;
+}
+
+
+.cwEvents tbody tr {
+  padding: 0.5rem 0;
+}
+
+.dataRow th {
+  padding: 0 0.2rem;
 }

@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   height: 150%;
-  top: 100vh;
+  top: 0;
   left: 0;
   z-index: -1;
 
@@ -23,12 +23,12 @@
 
     &:nth-child(3n + 1)::after {
       animation-delay: 4s;
-      animation-duration: 7s;
+      animation-duration: 10s;
     }
 
     &:nth-child(5n + 1)::after {
       animation-delay: 2s;
-      animation-duration: 3s;
+      animation-duration: 5s;
     }
 
     &::after {
@@ -46,8 +46,8 @@
         #f239f2d4 75%,
         #eec705be 100%
       );
-      animation-delay: 0.4s;
-      animation: run 4s 0s infinite linear;
+      animation-delay: 0.6s;
+      animation: run 7s 0s infinite linear;
       animation-fill-mode: forwards;
 
     }
@@ -65,8 +65,13 @@
 @keyframes run {
   0% {
     transform: translateY(-100%);
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
   }
   100% {
     transform: translateY(200%);
+    opacity: 0;
   }
 }

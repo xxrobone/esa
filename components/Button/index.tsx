@@ -9,7 +9,7 @@ interface ButtonProps {
   background?: string;
   color?: string;
   borderRadius?: string;
-  theme?: 'filled' | 'outline';
+  theme?: 'filled' | 'outlined';
   onClick?: (event: MouseEvent<HTMLButtonElement> | KeyboardEvent<HTMLButtonElement>) => void;
 }
 
@@ -41,7 +41,7 @@ const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      className={`${styles.button} ${styles[size]} ${styles[theme]}`}
+      className={`${styles.button} ${styles[size]} ${styles[theme]} max-w-[200px] hover:brightness-110`}
       style={{
         backgroundColor: background,
         color: color,

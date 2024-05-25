@@ -52,7 +52,7 @@ const MenuBtn = ({ active, setActive }) => {
           onMouseLeave={() => setSize('small')}
         >
           <Image
-            src='/degaming.svg'
+            src='/cogwork.png'
             alt='money'
             width={24}
             height={24}

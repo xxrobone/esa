@@ -1,5 +1,5 @@
 import Magnetic from '../magnetic/magnetic';
-import Link from 'next/link'
+import Link from 'next/link';
 
 import { motion } from 'framer-motion';
 import { IconContext } from 'react-icons';
@@ -19,7 +19,7 @@ const Socials = () => {
         <Magnetic>
           <Link
             data-icon='email'
-            href='mailto:robertwagar@gmail.com'
+            href='mailto:robert@cogwork.se'
             target='_blank'
             rel='noreferrer noopener'
           >

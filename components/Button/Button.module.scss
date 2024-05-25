@@ -8,6 +8,7 @@
     font-weight: 600;
     padding: 10px 16px;
     transition: all 0.3s ease-in-out;
+    margin: 1rem 0;
   }
   
   .small {
@@ -52,14 +53,14 @@
   }
   }
   
-  .outline {
-    background-color: transparent;
-    color: #ffffff;
+  .outlined {
+    background-color: transparent !important;
+    color: #ffffff !important;
     border: 1px solid var(--primary);
 
      /* Hover effect */
   &:hover {
-    background-color: var(--primary);
+    background-color: var(--primary) !important;
   }
   
   /* Active and Focus states */

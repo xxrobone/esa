@@ -22,7 +22,7 @@ const Nav: React.FC<NavProps> = ({ active, children }) => {
     >
       {' '}
       <Link className={styles.link} href='/'>
-        DeGaming
+        E-Sport Academy Sweden
       </Link>
       <ul className={`${styles.menu} ${active ? styles.open : ''}`}>
         {children}
