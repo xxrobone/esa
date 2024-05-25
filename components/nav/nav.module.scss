@@ -7,14 +7,13 @@
   flex-direction: column;
   align-items: center;
   top: auto;
-    bottom: 2vh;
+    bottom: 10vh;
     right: 5%;
     left: 5%;
     width: 90%;
     height: 80svh;
   z-index: 1999;
   overflow: hidden;
-  background-color: black;
 
   .link {
    width: 100%;
@@ -22,7 +21,6 @@
     left: 0;
     right: auto;
     color: $color-client-1;
-    transform: rotate(-90deg);
     font-weight: 600;
     font-size: $font-size-l;
     font-family: var(--font-space_grotesk);
@@ -30,6 +28,7 @@
     text-align: center;
 
     @media (min-width: 960px) {
+      bottom: 2vh;
       padding: 0;
       width: 100%;
       position: relative;
@@ -45,8 +44,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* not shure I want to use the 'classic' nav layout on mobile */
-    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -58,6 +55,7 @@
     justify-content: center;   
     padding: 8px;
     gap: 0.5rem;
+    background-color: black;
     
     -webkit-filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
             filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));

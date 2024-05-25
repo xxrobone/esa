@@ -1,4 +1,5 @@
 .main {
+  overflow-x: hidden;
 }
 
 .contentWrapper {
@@ -11,10 +12,14 @@
 }
 
 .phrase {
-  font-size: 2rem;
-  line-break: normal;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   width: inherit;
-  max-width: 80vw;
+  word-break: normal;
+  font-weight: 700;
+
+  .span {
+    word-wrap: break-word;
+  }
 }
 
 .section1 {

@@ -82,7 +82,7 @@ export default function Home() {
       <>
         <div className='bg'></div>
         <BgEllipse />
-         <GridLines />
+        <GridLines />
         <TopSectionsWrapper />
         <div className={styles.contentWrapper}>
           <section className={styles.section}>
@@ -94,7 +94,10 @@ export default function Home() {
               }}
               onMouseLeave={() => setSize('small')}
             >
-              <h3 className={styles.phrase}>{styledPhrase}</h3>
+              {/*  <h3 className={styles.phrase}>{styledPhrase}</h3> */}
+              <h3 className={styles.phrase}>
+                E-sportkurser med fokus på teamwork, fair-play och gemenskap
+              </h3>
               <div style={{ textAlign: 'left', marginBottom: '2rem' }}>
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -376,7 +379,7 @@ export default function Home() {
         {/*  <section className={styles.section}>
           <PreviewWrapper />
         </section>  */}
-         <SectionCollection />
+        <SectionCollection />
       </>
     </main>
   );

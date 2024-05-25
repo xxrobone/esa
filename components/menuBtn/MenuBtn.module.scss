@@ -6,7 +6,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 1rem;
-    z-index: 1000;    
+    z-index: 10000;    
     border-radius: 100px;
     padding: 8px;
     -webkit-filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
@@ -211,10 +211,40 @@
 }
       
  
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
+
+    .hamburger_wrapper {
+    left: 10% !important;
+    transform: translateX(10%);
+    }
     .hamburger {
      /*  display: none; */
+
+     button {
+        position: relative;
+        margin: 0 4px;
+        outline: none;
+        border: none;
+        border: 1px solid #f8f8f831;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background: transparent;
+        pointer-events: auto;
+        cursor: pointer;
+    
+        >svg {
+            height: 80%;
+            width: auto;
+            fill: white;
+        }
+    }
   }
+
+ 
 }
 
 .hide {

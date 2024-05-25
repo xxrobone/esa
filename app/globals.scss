@@ -98,11 +98,12 @@
 
 html,
 body {
-  overflow-x: hidden;
+ 
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
  
 }
 
@@ -190,19 +191,17 @@ a {
 .title {
   width: 100%;
   font-family: var(--font-space_grotesk);
-  font-size: clamp(3rem, 0.75rem + 7vw, 6rem);
+  font-size: clamp(3rem, 0.75rem + 5vw, 6rem);
 }
 
 .title2 {
-  width: 100%;
   font-family: var(--font-space_grotesk);
   font-size: clamp(3rem, 0.75rem + 6vw, 5rem);
 }
 
 .headerRow .title span {
-  width: 100%;
   font-family: var(--font-space_grotesk);
-  font-size: clamp(2rem, 0.75rem + 3vw, 3rem);
+  font-size: clamp(1.5rem, 0.75rem + 4vw, 3rem);
 }
 
 td {
@@ -210,14 +209,10 @@ td {
 }
 
 td.title {
-  width: 100%;
   font-family: var(--font-space_grotesk);
   font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
 }
 
-span {
-  white-space: nowrap;
-}
 
 
 .cwEvents tbody tr {
